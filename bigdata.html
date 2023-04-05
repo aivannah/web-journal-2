@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title>Web Journal</title>
+    <style>
+      body{
+        min-height: 100vh;
+        background: url(data2.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(2px);
+        color: white;
+      }
+      .hen{
+      position: absolute;
+      right: 5%;
+      bottom: 10px;
+      padding: 10px;
+      font-size: 15px;
+     
+      
+    }
+
+    .jen{
+      position: absolute;
+      left: 5%;
+      bottom: 10px;
+      padding: 13px;
+      font-size: 15px;
+     
+    }
+      </style>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+     <div class="menu">
+       <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-table"></i>Journals<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="artificial.html" class="sub-item">Artificial Intelligence </a>
+           <a href="IOT.html" class="sub-item">Internet of Things</a>
+           <a href="VR.html" class="sub-item">VR/AR/MR</a>
+           <a href="bigdata.html" class="sub-item">Data Science</a>
+           <a href="nano.html" class="sub-item">NanoTechnology</a>
+           <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+         </div>
+       </div> 
+       
+       <div class="item"><a href="https://aivannah.github.io/CV/"><i class="fas fa-info-circle"></i>About</a></div>
+     </div>
+   </div>
+   <!-- <section class="main">
+     <h1>Sidebar Menu With<br>Sub-Menus</h1>
+   </section> -->
+
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+
+  <!-- -------------------------------------------------------------------------------------------------------  -->
+
+  <div class="meaning">
+    <h1 style="text-align: center; color: white;"><u>Data Science</u> </h1> <br>
+
+    <center>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xC-c7E5PK0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <!-- <video width="700" height="500" controls>
+        <source src="What REALLY is Data Science_ Told by a Data Scientist.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>       -->
+    </center>
+    <br><br>
+    <p style="text-align: center;"> What REALLY is Data Science? Told by a Data Scientist</p>
+  </div> 
+
+  <div class="meaning">
+    <h3 style="margin-left: 50px;"><b>What is Data Science</b> </h3> <br>
+    <p>&emsp;&emsp;&emsp; Data Science is a multi-disciplinary field that uses scientific methods, processes,
+      algorithms, and systems to extract knowledge and insights from structured,
+      semi-structured and unstructured data. Data Science is much more than simply analyzing data. It offers a range of roles and
+      requires a range of skills.</p>
+  </div> 
+
+  <div class="meaning">
+    <h3 style="margin-left: 50px; margin-right: 20px;"><b>History of Data Science</b> </h3> <br>
+    <p>&emsp;&emsp;&emsp; While the term data science is not new, the meanings and connotations have
+      changed over time. The word first appeared in the ’60s as an alternative name
+      for statistics. In the late ’90s, computer science professionals formalized the
+      term. A proposed definition for data science saw it as a separate field with three
+      aspects: data design, collection, and analysis. It still took another decade for the
+      term to be used outside of academia.</p>
+  </div> 
+
+  <br>
+<br> <br> <br>
+<br>
+
+  <div class="hen">
+    <a href="data_used_for.html">
+      <button type="button">Next Page: The used and techniques <br> in Data Science  </button>
+    </a>
+  </div>
+
+  <div class="jen">
+  <a href="index.html">
+    <button type="button">Back: Home  </button>
+  </a>
+  </div>
+
+</body>
+</html>

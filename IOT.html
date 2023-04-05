@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+
+    <title>Web Journal</title>
+    <style>
+      body{
+        min-height: 100vh;
+        background: url(iot5.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(4px);
+        /* color: white; */
+      }
+      .hen{
+      position: absolute;
+      right: 5%;
+      bottom: 10px;
+      padding: 10px;
+      font-size: 15px;
+     
+      
+    }
+
+    .jen{
+      position: absolute;
+      left: 5%;
+      bottom: 10px;
+      padding: 13px;
+      font-size: 15px;
+     
+    }
+      
+      </style>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+     <div class="menu">
+       <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-table"></i>Journals<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="artificial.html" class="sub-item">Artificial Intelligence </a>
+           <a href="IOT.html" class="sub-item">Internet of Things</a>
+           <a href="VR.html" class="sub-item">VR/AR/MR</a>
+           <a href="bigdata.html" class="sub-item">Data Science</a>
+           <a href="nano.html" class="sub-item">NanoTechnology</a>
+           <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+         </div>
+       </div> 
+       
+       <div class="item"><a href="https://aivannah.github.io/CV/"><i class="fas fa-info-circle"></i>About</a></div>
+     </div>
+   </div>
+   <!-- <section class="main">
+     <h1>Sidebar Menu With<br>Sub-Menus</h1>
+   </section> -->
+<!-- ------------------------------------------------------------------------------------------------------- -->
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+<div class="meaning">
+  <h1 style="text-align: center;"><u>Internet of Things</u> </h1> <br>
+  <p>&emsp;&emsp;&emsp; The Internet of Things (IoT) describes the network of physical objects—“things”—that are 
+    embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with 
+    other devices and systems over the internet.</p>
+</div> 
+  
+<br><br><br>
+
+  <h1 style="text-align: center;"><u>History of IoT</u> </h1> <br>
+
+  <div class="row" style="z-index: 0; text-align: justify;">    
+    <div class="col-lg-4 col-md-8">      
+        <div class="alert alert-success" role="alert">
+          The idea of embedding sensors and intelligence into physical items was initially proposed in the 
+          <b> 1980s </b>when some college students decided to alter a Coca-Cola vending machine to allow for remote 
+          monitoring of its contents. But technological advancement was slow and cumbersome.
+            <br><br><br>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6">      
+      <div class="alert alert-success" role="alert">
+        Computer scientist Kevin Ashton first used the term "Internet of Things" in <b> 1999</b>. Ashton advocated 
+        putting radio-frequency identification (RFID) chips on products to follow them through a supply chain 
+        while he was employed by Procter & Gamble.
+          <br><br><br>
+      </div>
+  </div>
+  <div class="col-lg-4 col-md-6">      
+    <div class="alert alert-success" role="alert">
+      In 2000, LG announced the first smart refrigerator, in <b> 2007 </b>the first iPhone was launched and by 2008, 
+      the number of connected devices exceeded the number of people on the planet.
+        <br><br><br>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6">      
+    <div class="alert alert-success" role="alert">
+      In 2009, Google started testing driverless cars and in <b> 2011</b>, Google’s Nest smart thermostat hit the 
+      market, which allowed remote control of central heating.
+        <br><br><br>
+    </div>
+  </div>
+  </div>
+
+<br>
+<br>
+<br>
+
+  <div class="hen">
+    <a href="iot_advantages_disadvantages.html">
+      <button type="button">Next Page: Advantages and <br> Disadvantages of IoT  </button>
+    </a>
+  </div>
+
+  <div class="jen">
+  <a href="index.html">
+    <button type="button">Back: Home  </button>
+  </a>
+  </div>
+</body>
+</html>

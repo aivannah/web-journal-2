@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title>Web Journal</title>
+    <style>
+      body{
+        min-height: 100vh;
+        background: url(nano2.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(4px);
+        /* color: white; */
+
+      }
+      .hen{
+      position: absolute;
+      right: 5%;
+      bottom: 10px;
+      padding: 10px;
+      font-size: 15px;
+     
+      
+    }
+
+    .jen{
+      position: absolute;
+      left: 5%;
+      bottom: 10px;
+      padding: 13px;
+      font-size: 15px;
+     
+    }
+      </style>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+     <div class="menu">
+       <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-table"></i>Journals<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="artificial.html" class="sub-item">Artificial Intelligence </a>
+           <a href="IOT.html" class="sub-item">Internet of Things</a>
+           <a href="VR.html" class="sub-item">VR/AR/MR</a>
+           <a href="bigdata.html" class="sub-item">Data Science</a>
+           <a href="nano.html" class="sub-item">NanoTechnology</a>
+           <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+         </div>
+       </div> 
+       
+       <div class="item"><a href="https://aivannah.github.io/CV/"><i class="fas fa-info-circle"></i>About</a></div>
+     </div>
+   </div>
+   <!-- <section class="main">
+     <h1>Sidebar Menu With<br>Sub-Menus</h1>
+   </section> -->
+<!-- ------------------------------------------------------------------------------------------------------- -->
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+<div class="meaning">
+    <h1 style ="margin-left: 50px;"><u>History of Blockchain</u> </h1> <br>
+    <p>&emsp;&emsp;&emsp; Satoshi Nakamoto, whose real identity still remains unknown to date, first introduced the 
+        concept of blockchains in 2008. The design continued to improve and evolve, with Nakamoto using a Hashcash-
+        like method. It eventually became a primary component of bitcoin, a popular form of cryptocurrency, where it
+         serves as a public ledger for all network transactions. Bitcoin blockchain file sizes, which contained all 
+         transactions and records on the network, continued to grow substantially. By August 2014, it had reached 
+         20 gigabytes, and eventually exceeded 200 gigabytes by early 2020. </p> <br>
+
+         <h1 style ="margin-left: 50px;"><u>How Does Blockchain Technology Work?</u> </h1> <br>
+         <p>&emsp;&emsp;&emsp; In recent years, you may have noticed many businesses around the world integrating Blockchain technology. But how exactly does Blockchain technology work? Is this a significant change or a simple addition? The advancements of Blockchain are still young and have the potential to be revolutionary in the future; so, let’s begin demystifying this technology.
+
+            Blockchain is a combination of three leading technologies: </p> <br>
+
+            <ol style="margin-left: 5%;">
+                <li>Cryptographic keys</li>
+                <li>A peer-to-peer network containing a shared ledger</li>
+                <li>A means of computing, to store the transactions and records of the network</li>
+            </ol> <br> <br>
+
+            <h1 style ="margin-left: 50px;"><u>How is Blockchain Used?</u> </h1> <br>
+         <p>&emsp;&emsp;&emsp; Blockchains store information on monetary transactions using cryptocurrencies, 
+            but they also store other types of information, such as product tracking and other data. For example, 
+            food products can be tracked from the moment they are shipped out, all throughout their journey, and up
+             until final delivery. This information can be helpful because if there is a contamination outbreak, 
+             the source of the outbreak can be easily traced. This is just one of the many ways that blockchains 
+             can store important data for organizations. </p>
+
+             <h1 style ="margin-left: 50px;"><u>Applications of Blockchain</u> </h1> <br>  
+             <ol style="margin-left: 5%;">
+                <li style="padding-bottom: 1%;"><b>Asset Management</b><br>&emsp;&emsp;&emsp; Blockchain plays a big part in the financial world and it is no different in asset management. In general terms, asset management involves the handling and exchange of different assets that an individual may own such as fixed income, real estate, equity, mutual funds, commodities, and other alternative investments.</li>
+                <li style="padding-bottom: 1%;"><b>Cross-Border Payments</b><br>&emsp;&emsp;&emsp;Have you ever tried to make cross-border payments in different currencies from one country to another? This can be a long complicated process and it can take many days for the money to arrive at its destination. Blockchain has helped in simplifying these cross border payments by providing end-to-end remittance services without any intermediaries. There are many remittance companies that offer Blockchain services which can be used to make international remittances within 24 hours. </li>
+                <li style="padding-bottom: 1%;"><b>Healthcare</b><br>&emsp;&emsp;&emsp; Blockchain can have a big impact on healthcare using smart contracts. These smart contacts mean that a contract is made between 2 parties without needing any intermediary. All the parties involved in the contract know the contract details and the contract is implemented automatically when the contract conditions are met. This can be very useful in healthcare wearing personal health records can be encoded via Blockchain so they are only accessible to primary healthcare providers with a key. They also help in upholding the HIPAA Privacy Rule which ensures that patient information is confidential and not accessible to everyone.</li>
+                <li style="padding-bottom: 1%;"><b>Cryptocurrency</b><br>&emsp;&emsp;&emsp;Perhaps one of the most popular applications of Blockchain is in Cryptocurrency. Who hasn’t heard about bitcoin and it’s insane popularity. One of the many advantages of cryptocurrency using blockchain as it has no geographical limitations. So crypto coins can be used for transactions all over the world. The only important thing to keep in mind is exchange rates and that people may lose some money in this process. </li>
+                <li style="padding-bottom: 1%;"><b>Birth and Death Certificates</b><br>&emsp;&emsp;&emsp; There are many people in the world who don’t have a legitimate birth certificate especially in the poorer countries of the world. According to UNICEF, one-third of all the children under the age of five don’t have a birth certificate. And the problem is similar to death certificates as well. However, Blockchain can help in solving this problem by creating a secure repository of birth and death certificates that are verified and can only be accessed by the authorized people.</li>
+                <li style="padding-bottom: 1%;"><b> Online Identity Verification</b><br>&emsp;&emsp;&emsp; It is not possible to complete any financial transactions online without online verification and identification. And this is true for all the possible service providers any user might have in the financial and banking industry. However, blockchain can centralize the online identity verification process so that users only need to verify their identity once using blockchain and then they can share this identity with whichever service provider they want. Users also have the option to choose their identity verification methods such as user authentication, facial recognition, etc.</li>
+                <li style="padding-bottom: 1%;"><b> Internet of Things</b><br>&emsp;&emsp;&emsp; The most common example of IoT is perhaps the Smart Home where all the home appliances such as lights, thermostat, air conditioner, smoke alarm, etc. can be connected together on a single platform. But where does Blockchain come into this? Well, Blockchain is needed for providing security for this massively distributed system. In IoT, the security of the system is only as good as the least secured device which is the weak link. Here Blockchain can ensure that the data obtained by the IoT devices are secure and only visible to trusted parties.</li>
+                <li style="padding-bottom: 1%;"><b>Copyright and Royalties</b><br>&emsp;&emsp;&emsp; Copyright and royalties are a big issue in creative sectors like music, films, etc. These are artistic mediums and it doesn’t sound like they have any link with Blockchain. But this technology is quite important in ensuring security and transparency in the creative industries.</li>
+
+             </ol>
+
+        
+
+  </div> 
+
+  <br>
+  <br> <br> <br>
+  <br>
+  
+  
+    <div class="jen">
+    <a href="nano_bio.html">
+      <button type="button">Back: Biotechnology, History, and it's Application  </button>
+    </a>
+    </div>
+  
+  </body>
+  </html>

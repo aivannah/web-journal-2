@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title>Web Journal</title>
+    <style>
+      body{
+        min-height: 100vh;
+        background: url(cloud1.png)no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(4px);
+        /* color: white; */
+
+      }
+      .hen{
+      position: absolute;
+      right: 5%;
+      bottom: 10px;
+      padding: 10px;
+      font-size: 15px;
+     
+      
+    }
+
+    .jen{
+      position: absolute;
+      left: 5%;
+      bottom: 10px;
+      padding: 13px;
+      font-size: 15px;
+     
+    }
+      </style>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+     <div class="menu">
+       <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-table"></i>Journals<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="artificial.html" class="sub-item">Artificial Intelligence </a>
+           <a href="IOT.html" class="sub-item">Internet of Things</a>
+           <a href="VR.html" class="sub-item">VR/AR/MR</a>
+           <a href="bigdata.html" class="sub-item">Data Science</a>
+           <a href="nano.html" class="sub-item">NanoTechnology</a>
+           <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+         </div>
+       </div> 
+       
+       <div class="item"><a href="https://aivannah.github.io/CV/"><i class="fas fa-info-circle"></i>About</a></div>
+     </div>
+   </div>
+   <!-- <section class="main">
+     <h1>Sidebar Menu With<br>Sub-Menus</h1>
+   </section> -->
+<!-- ------------------------------------------------------------------------------------------------------- -->
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+
+<div class="meaning">
+    <h3 style="margin-left: 50px; margin-right: 20px;"><b>History of Computer vision</b> </h3> <br>
+    <p>&emsp;&emsp;&emsp; The origins of computer vision go back to an MIT undergraduate summer project in 1966. It was believed at the time that computer vision could be solved in one summer, but we now have a 50- year old scientific field that is still far from being solved.
+        Early experiments in computer vision took place in the 1950s, using some of the first neural networks to detect the edges of an object and to sort simple objects into categories like circles and squares. In the 1970s, the first commercial use of computer vision interpreted typed or handwritten
+        text using optical character recognition. This advancement was used to interpret written text for the blind. As the internet matured in the 1990s, making large sets of images available online for analysis, facial recognition programs flourished. These growing data sets helped make it possible
+        for machines to identify specific people in photos and videos.</p> <br><br>
+
+    <h3 style="margin-left: 50px; margin-right: 20px;"><b>What is of Computer vision?</b> </h3> <br>
+    <p>&emsp;&emsp;&emsp; It is an interdisciplinary scientific field that deals with how computers can be made to gain a high level understanding of digital images or videos. From the perspective of engineering, it seeks to automate tasks that the human visual system can do.
+        Computer vision tasks include methods for acquiring, processing, analyzing and understanding digital images, and extraction of high-dimensional data from the real world in order to produce numerical or symbolic information, e.g. in the forms of decisions. Understanding in this context means the transformation of visual images (the input of the retina) into descriptions of the world that can interface with other thought processes and elicit appropriate action. This image understanding can be seen as the disentangling of symbolic information from image data using models constructed with the aid of geometry, physics, statistics, and learning theory.
+        Another way to define computer vision is through its applications. Computer vision is building algorithms that can understand the content of images and use it for other applications.</p> <br><br>
+
+        <h3 style="margin-left: 50px; margin-right: 20px;"><b>How computer vision works?</b> </h3> <br>
+        <ol style="margin-left: 50px;">
+            <li style="margin-bottom: 1%;"><b>Acquiring an image</b> : Images, even large sets, can be acquired in real-time through video, photos or 3D technology for analysis.</li>
+            <li style="margin-bottom: 1%;"><b>Processing the image</b> : Deep learning models automate much of this process, but the models are often trained by first being fed thousands of labeled or pre-identified images.</li>
+            <li style="margin-bottom: 1%;"><b>Understanding the image</b> : The final step is the interpretative step, where an object is identified or classified.
+            </li>
+        </ol> <br><br>
+
+        <h3 style="margin-left: 50px; margin-right: 20px;"><b>Applications of Computer Vision</b> </h3> <br>
+        <ol style="margin-left: 50px;">
+            <li style="margin-bottom: 1%;"><b>Agriculture</b></li>
+            <li style="margin-bottom: 1%;"><b>Autonomous vehicles</b></li>
+            <li style="margin-bottom: 1%;"><b>Facial recognition</b></li>
+            <li style="margin-bottom: 1%;"><b>Human pose tracking</b></li>
+            <li style="margin-bottom: 1%;"><b>Interactive entertainment</b></li>
+            <li style="margin-bottom: 1%;"><b>Medical imaging</b></li>
+            <li style="margin-bottom: 1%;"><b>Manufacturing</b></li>
+            <li style="margin-bottom: 1%;"><b>Retail management</b></li>
+            <li style="margin-bottom: 1%;"><b>Education</b></li>
+            <li style="margin-bottom: 1%;"><b>Transportation</b></li>
+            
+        </ol>
+  </div>
+  
+  <br><br><br><br>
+  <div class="jen">
+    <a href="cloud_autonomic.html">
+      <button type="button">Back: Autonomic Computing   </button>
+    </a>
+    </div>
+  
+  </body>
+  </html>

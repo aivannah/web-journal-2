@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Web Journal</title>
+
+    <style>
+        body{
+      min-height: 100vh;
+      background: url(ai.jpg)no-repeat;
+      background-size: cover;
+      background-position: center;
+      backdrop-filter: blur(4px);
+    }
+    
+    .hen{
+      position: absolute;
+      right: 5%;
+      bottom: 10px;
+      padding: 10px;
+      font-size: 15px;
+     
+      
+    }
+
+    .jen{
+      position: absolute;
+      left: 5%;
+      bottom: 10px;
+      padding: 13px;
+      font-size: 15px;
+     
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <div class="close-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+          <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+            <div class="item">
+              <a class="sub-btn"><i class="fas fa-table"></i>Journals<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                  <a href="artificial.html" class="sub-item">Artificial Intelligence </a>
+                  <a href="IOT.html" class="sub-item">Internet of Things</a>
+                  <a href="VR.html" class="sub-item">VR/AR/MR</a>
+                  <a href="bigdata.html" class="sub-item">Data Science</a>
+                  <a href="nano.html" class="sub-item">NanoTechnology</a>
+                  <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+                </div>
+            </div>  
+          <div class="item"><a href="https://aivannah.github.io/CV/"><i class="fas fa-info-circle"></i>About</a></div>
+        </div>
+    </div>
+
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        //jquery for toggle sub menus
+        $('.sub-btn').click(function(){
+          $(this).next('.sub-menu').slideToggle();
+          $(this).find('.dropdown').toggleClass('rotate');
+        });
+   
+        //jquery for expand and collapse the sidebar
+        $('.menu-btn').click(function(){
+          $('.side-bar').addClass('active');
+          $('.menu-btn').css("visibility", "hidden");
+        });
+   
+        $('.close-btn').click(function(){
+          $('.side-bar').removeClass('active');
+          $('.menu-btn').css("visibility", "visible");
+        });
+      });
+      </script>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+  <h1 style="text-align: center;">History of AI </h1> <br>
+  <section class="parent">
+    <section class="ses">
+      <p> &emsp;&emsp;&emsp;Artificial Intelligence is not a new word and not a new technology for researchers. This technology is much older than you would 
+            imagine. Even there are the myths of Mechanical men in Ancient Greek and Egyptian Myths. The video below discussed the milestones in 
+            the history of AI which define the journey from the AI generation to till date development.</p> 
+    </section>
+  </section> 
+
+<br>
+<br>
+<br>
+
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/S_KDxaOQR84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- <video controls width="60%" style="text-align: center;" >
+      <source src="History of Artificial Intelligence _ Evolution Of AI _ The Age Of A.I _ Science Knowledge Facts.mp4" type="video/mp4">
+      <source src="History of Artificial Intelligence _ Evolution Of AI _ The Age Of A.I _ Science Knowledge Facts.mp4" type="video/ogg">
+    Your browser does not support the video tag. -->
+</center> 
+
+<br>
+<br>
+<br>
+
+<div class="hen">
+    <a href="advantages_disadvantages.html">
+      <button type="button">Next Page: Advantages and Disadvantages of AI  </button>
+    </a>
+</div>
+<div class="jen">
+  <a href="artificial.html">
+    <button type="button">Back: Artificial Intelligence  </button>
+  </a>
+</div>
+
+<br>
+<br>
+
+
+</body>
+</html>

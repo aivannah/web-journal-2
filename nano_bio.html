@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title>Web Journal</title>
+    <style>
+      body{
+        min-height: 100vh;
+        background: url(nano2.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(4px);
+        /* color: white; */
+
+      }
+      .hen{
+      position: absolute;
+      right: 5%;
+      bottom: 10px;
+      padding: 10px;
+      font-size: 15px;
+     
+      
+    }
+
+    .jen{
+      position: absolute;
+      left: 5%;
+      bottom: 10px;
+      padding: 13px;
+      font-size: 15px;
+     
+    }
+      </style>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+     <div class="menu">
+       <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-table"></i>Journals<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="artificial.html" class="sub-item">Artificial Intelligence </a>
+           <a href="IOT.html" class="sub-item">Internet of Things</a>
+           <a href="VR.html" class="sub-item">VR/AR/MR</a>
+           <a href="bigdata.html" class="sub-item">Data Science</a>
+           <a href="nano.html" class="sub-item">NanoTechnology</a>
+           <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+         </div>
+       </div> 
+       
+       <div class="item"><a href="https://aivannah.github.io/CV/"><i class="fas fa-info-circle"></i>About</a></div>
+     </div>
+   </div>
+   <!-- <section class="main">
+     <h1>Sidebar Menu With<br>Sub-Menus</h1>
+   </section> -->
+<!-- ------------------------------------------------------------------------------------------------------- -->
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+ 
+<div class="meaning">
+    <h1 style="text-align: center;"><u>Biotechnology</u> </h1> <br>
+    <p>&emsp;&emsp;&emsp; Biotechnology is the use of biology to develop new products, methods and organisms 
+        intended to improve human health and society. Biotechnology, often referred to as biotech, has existed 
+        since the beginning of civilization with the domestication of plants, animals and the discovery of 
+        fermentation.</p> <br>
+
+        <h3 style="margin-left: 50px; "><b>History of Biotechnology</b> </h3> <br>
+        <p>&emsp;&emsp;&emsp; Biotechnology began at least 6,000 years ago with the agricultural revolution. 
+            This early era was characterized by exploiting living organisms in their natural forms or modifying 
+            their genetic makeup through selective breeding.Over the last 100 hundred years or so, biotechnology 
+            emerged with the following discoveries and advancements:</p> <br>
+            
+            <ul style="margin-left: 100px;">
+                <li style="padding-bottom: 1%;">1919. Hungarian scientist Karl Ereky coins the term biotechnology.</li>
+                <li style="padding-bottom: 1%;">1928. Alexander Fleming discovers penicillin, the first true antibiotic.</li>
+                <li style="padding-bottom: 1%;">1943. Oswald Avery proves DNA carries genetic information.</li>
+                <li style="padding-bottom: 1%;">1953. James Watson and Francis Crick discover the double helix structure of DNA.</li>
+                <li style="padding-bottom: 1%;">1960s. Insulin is synthesized to fight diabetes, and vaccines for measles, mumps and rubella are developed.</li>
+                <li style="padding-bottom: 1%;">1969. The first synthesis of an enzyme in vitro, or outside the body, is conducted.</li>
+                <li style="padding-bottom: 1%;">1973. Herbert Boyer and Stanley Cohen develop genetic engineering with the first insertion of DNA from one bacteria into another.</li>
+                <li style="padding-bottom: 1%;">1980s. The first biotech drugs to treat cancer are developed.</li>
+                <li style="padding-bottom: 1%;">1890. The United States Supreme Court rules that a "live human-made microorganism is patentable subject matter," meaning GMOs can be intellectual property.</li>
+                <li style="padding-bottom: 1%;">1982. A biotech-developed form of insulin becomes the first genetically engineered product approved by the U.S. Food and Drug Administration (FDA).</li>
+                <li style="padding-bottom: 1%;">1983. The first genetically modified plant is introduced.</li>
+                <li style="padding-bottom: 1%;">1993. GMOs are introduced into agriculture with the FDA approval of growth hormones that produce more milk in cows.</li>
+                <li style="padding-bottom: 1%;">1997. The first mammal is cloned.</li>
+                <li style="padding-bottom: 1%;">1998. The first draft of the Human Genome Project is created, giving scientists access to over 30,000 human genes and facilitating research on treatment of diseases such as cancer and Alzheimer's.</li>
+                <li style="padding-bottom: 1%;">2010. The first synthetic cell is created.</li>
+                <li style="padding-bottom: 1%;">2013. The first bionic eye is created.</li>
+                <li style="padding-bottom: 1%;">2020. MRNA vaccine and monoclonal antibody technology is used to treat the SARS-CoV-2 virus.</li>
+            </ul> <br><br>
+
+            <h3 style="margin-left: 50px; "><b>Applications of Biotechnology</b> </h3> <br>
+        <p>&emsp;&emsp;&emsp; The use and commercialization of modern biotechnology often fall into four main fields: environment, medicine, industry and agriculture.</p>
+            
+        <center>
+           <br> <img src="nano_bio_applications.png" alt="">
+        </center>
+  
+  </div> 
+
+  <br>
+  <br> <br> <br>
+  <br>
+  
+    <div class="hen">
+      <a href="nano_blockchain.html">
+        <button type="button">Next Page: Blockchain </button>
+      </a>
+    </div>
+  
+    <div class="jen">
+    <a href="nano_fundamentals.html">
+      <button type="button">Back: Fundamental Concepts of Nanotechnology and NanoScience, <br>Applications of NanoTechnology  </button>
+    </a>
+    </div>
+  
+  </body>
+  </html>

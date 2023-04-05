@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title>Web Journal</title>
+    <style>
+      body{
+        min-height: 100vh;
+        background: url(data2.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(2px);
+        color: white;
+      }
+      .hen{
+      position: absolute;
+      right: 5%;
+      bottom: 10px;
+      padding: 10px;
+      font-size: 15px;
+     
+      
+    }
+
+    .jen{
+      position: absolute;
+      left: 5%;
+      bottom: 10px;
+      padding: 13px;
+      font-size: 15px;
+     
+    }
+      </style>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+     <div class="menu">
+       <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-table"></i>Journals<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="artificial.html" class="sub-item">Artificial Intelligence </a>
+           <a href="IOT.html" class="sub-item">Internet of Things</a>
+           <a href="VR.html" class="sub-item">VR/AR/MR</a>
+           <a href="bigdata.html" class="sub-item">Data Science</a>
+           <a href="nano.html" class="sub-item">NanoTechnology</a>
+           <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+         </div>
+       </div> 
+       
+       <div class="item"><a href="https://aivannah.github.io/CV/"><i class="fas fa-info-circle"></i>About</a></div>
+     </div>
+   </div>
+   <!-- <section class="main">
+     <h1>Sidebar Menu With<br>Sub-Menus</h1>
+   </section> -->
+
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+
+  <!-- -------------------------------------------------------------------------------------------------------  -->
+
+  <div class="meaning">
+    <h2 style="text-align: center;"><b>Hadoop</b> </h2> <br>
+    <p>&emsp;&emsp;&emsp;Apache Hadoop is an open source framework that is used to efficiently
+        store and process large datasets ranging in size from gigabytes to
+        petabytes of data. Instead of using one large computer to store and
+        process the data, Hadoop allows clustering multiple computers to
+        analyze massive datasets in parallel more quickly.</p> <br> <br>
+
+        <h3 style="margin-left: 5%;"><b>Examples</b> </h3> <br>
+    <p>&emsp;&emsp;&emsp;For example, when a customer tries to buy a mobile phone, then it
+        suggests a customer for the mobile back cover, screen guard.
+        Also, Hadoop helps retailers to customize their stocks based on the
+        predictions that came from different sources such as Google search,
+        social media websites, etc.</p> <br> <br>
+
+        <h3 style="margin-left: 5%;"><b>What is Hadoop and its types?</b> </h3> <br>
+    <p>&emsp;&emsp;&emsp;It is the most commonly used software to handle Big Data. There
+        are three components of Hadoop. Hadoop HDFS - Hadoop Distributed
+        File System (HDFS) is the storage unit of Hadoop. Hadoop
+        MapReduce - Hadoop MapReduce is the processing unit of Hadoop.
+        Hadoop YARN - Hadoop YARN is a resource management unit of
+        Hadoop</p>
+
+        <br>
+  <br> <br> <br>
+  <br>
+  
+
+  
+    <div class="jen">
+    <a href="data_cluster_trypes.html">
+      <button type="button">Back: Cluster Computing and it's Types  </button>
+    </a>
+    </div>
+  
+  </body>
+  </html>
+
+
+  </div> 

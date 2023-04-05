@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+
+    <title>Web Journal</title>
+    <style>
+      body{
+        min-height: 100vh;
+        background: url(iot5.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(4px);
+        /* color: white; */
+      }
+      .hen{
+      position: absolute;
+      right: 5%;
+      bottom: 10px;
+      padding: 10px;
+      font-size: 15px;
+     
+      
+    }
+
+    .jen{
+      position: absolute;
+      left: 5%;
+      bottom: 10px;
+      padding: 13px;
+      font-size: 15px;
+     
+    }
+      
+      </style>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+     <div class="menu">
+       <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-table"></i>Journals<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="artificial.html" class="sub-item">Artificial Intelligence </a>
+           <a href="IOT.html" class="sub-item">Internet of Things</a>
+           <a href="VR.html" class="sub-item">VR/AR/MR</a>
+           <a href="bigdata.html" class="sub-item">Data Science</a>
+           <a href="nano.html" class="sub-item">NanoTechnology</a>
+           <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+         </div>
+       </div> 
+       
+       <div class="item"><a href="https://aivannah.github.io/CV/"><i class="fas fa-info-circle"></i>About</a></div>
+     </div>
+   </div>
+   <!-- <section class="main">
+     <h1>Sidebar Menu With<br>Sub-Menus</h1>
+   </section> -->
+<!-- ------------------------------------------------------------------------------------------------------- -->
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+<h1 style= "margin-left: 5%;">Advantages of Internet of Things </h1> 
+  <div class="meaning">
+    <ul style="margin-right: 4%; margin-left: 5%;" >
+      <li><b> Improved Customer Engagement:</b> Current analytics suffer from blind-spots and significant
+        flaws inaccuracy; and as noted, engagement remains passive. IoT completely transforms this to achieve
+        richer and more effective engagement with audiences.</li>
+      <li><b> Technology Optimization:</b> The same technologies and data which improve the customer
+        experience also improve device use, and aid in more potent improvements to technology. IoT unlocks a
+        world of critical functional and field data.</li>
+      <li><b> Reduced Waste:</b> IoT makes areas of improvement clear. Current analytics give us superficial
+        insight, but IoT provides real-world information leading to the more effective management of resources.</li>
+      <li><b> Enhanced Data Collection:</b> Modern data collection suffers from its limitations and its design
+        for passive use. IoT breaks it out of those spaces and places it exactly where humans really want to go to
+        analyze our world. It allows an accurate picture of everything.</li>  
+    </ul>
+  </div>
+
+<br>
+<br>
+
+  <h1 style= "margin-left: 5%;">Disadvantages of Internet of Things </h1> 
+  <div class="meaning">
+    <ul style="margin-right: 4%; margin-left: 5%;">
+      <li>As the number of connected devices increases and more information is shared between devices,
+        the potential that a hacker could steal confidential information also increases.</li>
+      <li>If there’s a bug in the system, it’s likely that every connected device will become corrupted.</li>
+      <li>Since there’s no international standard of compatibility for IoT, it’s difficult for devices from
+        different manufacturers to communicate with each other.</li>
+      <li>Enterprises may eventually have to deal with massive numbers maybe even millions of IoT
+        devices and collecting and managing the data from all those devices will be challenging.</li>  
+    </ul>
+  </div>
+
+<br>
+<br>
+<br>
+
+<div class="hen">
+    <a href="iot_challenges.html">
+      <button type="button">Next Page: Challenges of IoT  </button>
+    </a>
+</div>
+<div class="jen">
+  <a href="IOT.html">
+    <button type="button">Back: Internet of Things  </button>
+  </a>
+</div>
+
+<br>
+<br>
+
+
+</body>
+</html>

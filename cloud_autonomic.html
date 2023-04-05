@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title>Web Journal</title>
+    <style>
+      body{
+        min-height: 100vh;
+        background: url(cloud1.png)no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(4px);
+        /* color: white; */
+
+      }
+      .hen{
+      position: absolute;
+      right: 5%;
+      bottom: 10px;
+      padding: 10px;
+      font-size: 15px;
+     
+      
+    }
+
+    .jen{
+      position: absolute;
+      left: 5%;
+      bottom: 10px;
+      padding: 13px;
+      font-size: 15px;
+     
+    }
+      </style>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+     <div class="menu">
+       <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-table"></i>Journals<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="artificial.html" class="sub-item">Artificial Intelligence </a>
+           <a href="IOT.html" class="sub-item">Internet of Things</a>
+           <a href="VR.html" class="sub-item">VR/AR/MR</a>
+           <a href="bigdata.html" class="sub-item">Data Science</a>
+           <a href="nano.html" class="sub-item">NanoTechnology</a>
+           <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+         </div>
+       </div> 
+       
+       <div class="item"><a href="https://aivannah.github.io/CV/"><i class="fas fa-info-circle"></i>About</a></div>
+     </div>
+   </div>
+   <!-- <section class="main">
+     <h1>Sidebar Menu With<br>Sub-Menus</h1>
+   </section> -->
+<!-- ------------------------------------------------------------------------------------------------------- -->
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+<div class="meaning">
+    <h1 style="text-align: center;">Autonomic Computing </h1> <br>
+    <p>&emsp;&emsp;&emsp; Autonomic computing (AC) is an approach to address the complexity and evolution problems 
+        in software systems. It is a self-managing computing model named after, and patterned on, the human body’s 
+        autonomic nervous system. An autonomic computing system would control the functioning
+        of computer applications and systems without input from the user, in the same way, that the autonomic 
+        nervous system regulates body systems without conscious input from the individual.</p> <br> <br>
+
+        <h1 style ="margin-left: 50px;"><u>Characteristics of Autonomic Systems</u> </h1> <br>
+        <p>&emsp;&emsp;&emsp; Autonomic systems/applications exhibit eight defining characteristics:</p>
+        
+        <ul style="margin-left: 50px;">
+            <li style="margin-bottom: 1%;"><b>Self-Awareness</b> : An autonomic application/system “knows itself” and is aware of its state and its behaviors. </li>
+            <li style="margin-bottom: 1%;"><b>Self-Configuring</b> : An autonomic application/system should be able to configure and reconfigure itself under varying and unpredictable conditions.</li>
+            <li style="margin-bottom: 1%;"><b>Self-Optimizing</b> : An autonomic application/system should be able to detect suboptimal behaviors and optimize itself to improve its execution.</li>
+            <li style="margin-bottom: 1%;"><b>Self-Healing</b> : An autonomic application/system should be able to detect and recover from potential problems and continue to function smoothly.</li>
+            <li style="margin-bottom: 1%;"><b>Self-Protecting</b> : An autonomic application/system should be capable of detecting and protecting its resources from both internal and external attacks and maintaining overall system security and integrity.</li>
+            <li style="margin-bottom: 1%;"><b>Context-Aware</b> : An autonomic application/system should be aware of its execution environment and be able to react to changes in the environment.</li>
+            <li style="margin-bottom: 1%;"><b>Open</b> : An autonomic application/system must function in a heterogeneous world and
+                should be portable across multiple hardware and software architectures. Consequently, it must be built on standard and open protocols and interfaces.</li>
+            <li style="margin-bottom: 1%;"><b>Anticipatory</b> : An autonomic application/system should be able to anticipate to the extent possible, its needs and behaviors and those of its context, and be able to manage itself proactively</li>
+           
+        </ul>
+
+          </div>
+
+            
+  <br>
+<br> <br> <br>
+<br>
+
+  <div class="hen">
+    <a href="cloud_vision.html">
+      <button type="button">Next Page: Computer Vision </button>
+    </a>
+  </div>
+
+  <div class="jen">
+  <a href="cloud.html">
+    <button type="button">Back: Cloud and Quantum Computing, and it's Advantages  </button>
+  </a>
+  </div>
+
+</body>
+</html>
+  

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+
+    <title>Web Journal</title>
+    <style>
+      body{
+        min-height: 100vh;
+        background: url(iot5.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(4px);
+        /* color: white; */
+      }
+      .hen{
+      position: absolute;
+      right: 5%;
+      bottom: 10px;
+      padding: 10px;
+      font-size: 15px;
+     
+      
+    }
+
+    .jen{
+      position: absolute;
+      left: 5%;
+      bottom: 10px;
+      padding: 13px;
+      font-size: 15px;
+     
+    }
+      
+      </style>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+     <div class="menu">
+       <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-table"></i>Journals<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="artificial.html" class="sub-item">Artificial Intelligence </a>
+           <a href="IOT.html" class="sub-item">Internet of Things</a>
+           <a href="VR.html" class="sub-item">VR/AR/MR</a>
+           <a href="bigdata.html" class="sub-item">Data Science</a>
+           <a href="nano.html" class="sub-item">NanoTechnology</a>
+           <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+         </div>
+       </div> 
+       
+       <div class="item"><a href="https://aivannah.github.io/CV/"><i class="fas fa-info-circle"></i>About</a></div>
+     </div>
+   </div>
+   <!-- <section class="main">
+     <h1>Sidebar Menu With<br>Sub-Menus</h1>
+   </section> -->
+<!-- ------------------------------------------------------------------------------------------------------- -->
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+    <h1 style="text-align: center;"><u>Architecture of IoT</u> </h1> <br>
+
+    <ol style="margin-left: 100px; margin-right: 50px;">
+        <li><b> Sensors/Actuators </b>- 
+            are the actual objects that interact with the environment to gather data.</li>  <br>
+        <li><b> Device/Gateway Layer </b>- This layer is in charge of providing data storage, 
+            processing, and communication capabilities as well as linking the sensors and actuators to the internet.
+        </li> <br>
+        <li><b> Network Layer </b>- 
+            This layer provides the communication infrastructure for the IoT system.
+        </li> <br>
+        <li><b> Platform Layer </b>- This layer provides the software and hardware infrastructure for the IoT system.
+        </li> <br>
+        <li><b> Application Layer</b> - This layer consists of the applications and services that make use of the 
+            data collected by the IoT system. 
+        </li>
+    </ol>
+
+    <div class="meaning">
+        <h1 style="text-align: center;"><u>Application of IoT</u> </h1> <br>
+        <p>&emsp;&emsp;&emsp; The versatile nature of IoT makes it an attractive option for so many businesses,
+            organizations, and government branches, that it doesn’t make sense to ignore it. Here’s a sample of various industries, and how IoT can be best applied.</p>
+    </div> 
+
+    <ol style="margin-left: 100px; margin-right: 50px;">
+        <li><b> Agriculture </b>- 
+            For indoor planting, IoT makes monitoring and management of micro-
+            climate conditions a reality, which in turn increases production. For outside planting, devices using IoT technology can sense soil moisture and nutrients, in conjunction 
+            with weather data, better control smart irrigation and fertilizer systems.</li>  <br>
+        <li><b> Consumer Use </b>- TFor private citizens, IoT devices in the form of wearables and smart homes make life easier. Wearables cover accessories such as 
+            Fitbit, smartphones, Apple watches, health monitors, to name a few. These devices improve entertainment, network connectivity, health, and fitness. 
+        </li> <br>
+        <li><b> Healthcare </b>- 
+            First and foremost, wearable IoT devices let hospitals monitor their patients’ health at home, thereby reducing hospital stays while 
+            still providing up to the minute real-time information that could save lives. In hospitals, smart beds keep the staff informed as to the availability, thereby cutting wait time for free space.
+        </li> <br>
+        <li><b> Insurance </b>- Insurance companies can offer their policyholders discounts for IoT wearables such as Fitbit. By employing fitness tracking, the insurer 
+            can offer customized policies and encourage healthier habits, which in the long run benefits everyone, insurer, and customer alike.
+        </li> <br>
+        <li><b> Manufacturing</b> - The world of manufacturing and industrial automation is another big winner in the IoT sweepstakes. RFID and GPS technology can help a manufacturer track a product from its
+            start on the factory floor to its placement in the destination store, the whole supply chain from start to finish. 
+        </li>
+        <li><b> Retail</b> - IoT sensors can help retailers control warehouse automation and robotics, analyze mall 
+            traffic, target customers based on past purchases, and craft personalized promotions for loyal customers.
+        <li><b> Transportation</b> - GPS is being used to help transportation companies plot faster and more efficient routes, and city 
+            planners can use it to determine traffic patterns, parking space demand, and road construction and maintenance.
+        </li>
+        <li><b> Utilities</b> - IoT sensors can be used to monitor environmental conditions such as humidity, temperature, and lighting, 
+            allowing algorithms to regulate energy usage and make adjustments. This allows businesses and private 
+            residences to experience significant energy savings, which benefits everyone, including the environment. 
+            Data gathered by IoT sensors can also be used to help run municipal power grids more efficiently and pinpoint 
+            outages faster, increasing the response time of repair crews and decreasing blackout times.
+        </li>
+
+    </ol>
+
+    <br>
+    <br>
+    <br>
+    
+    <div class="hen">
+        <a href="iot_based.html">
+          <button type="button">Next Page: IoT Based  </button>
+        </a>
+    </div>
+    <div class="jen">
+      <a href="iot_challenges.html">
+        <button type="button">Back: Challenges of IoT  </button>
+      </a>
+    </div>
+    
+    <br>
+    <br>
+    
+    
+    </body>
+    </html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
+   <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+   <link href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" /> -->
+  <title>Web Journal</title>
+  <style>
+    body{
+      min-height: 100vh;
+      background: url(ai.jpg)no-repeat;
+      background-size: cover;
+      background-position: center;
+      backdrop-filter: blur(4px);
+    }
+    
+    .hen{
+      position: absolute;
+      right: 5%;
+      bottom: 10px;
+      padding: 10px;
+      font-size: 15px;
+     
+      
+    }
+
+    .jen{
+      position: absolute;
+      left: 5%;
+      bottom: 10px;
+      padding: 13px;
+      font-size: 15px;
+     
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </div>
+  <div class="side-bar">
+    <div class="close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+        <div class="item">
+          <a class="sub-btn"><i class="fas fa-table"></i>Journals<i class="fas fa-angle-right dropdown"></i></a>
+            <div class="sub-menu">
+              <a href="artificial.html" class="sub-item">Artificial Intelligence </a>
+              <a href="IOT.html" class="sub-item">Internet of Things</a>
+              <a href="VR.html" class="sub-item">VR/AR/MR</a>
+              <a href="bigdata.html" class="sub-item">Data Science</a>
+              <a href="nano.html" class="sub-item">NanoTechnology</a>
+              <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+            </div>
+        </div>  
+      <div class="item"><a href="https://aivannah.github.io/CV/"><i class="fas fa-info-circle"></i>About</a></div>
+    </div>
+  </div>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+
+<!-- -------------------------------------------------------------------------------------------------------- -->
+  
+
+  <div class="meaning">
+    <h1 style="text-align: center;"><u>Artificial Intelligence</u> </h1> <br>
+    <p>&emsp;&emsp;&emsp; Artificial Intelligence is composed of two words Artificial and Intelligence.
+      Artificial defines "man-made," and intelligence defines "thinking power", or “the ability to learn and solve problems” hence Artificial Intelligence means "a man-made thinking power."
+      AI enables technical systems to perceive their environment, deal with what they perceive, solve problems and act to achieve a specific goal. The computer receives data - already prepared or gathered through its own sensors such as a camera - processes it and responds.</p>
+  </div> 
+
+  <div class="meaning">
+    <h3>Need for Artificial Intelligence</h3> <br>
+    <ol style="margin-left: 20px;">
+      <li>To create expert systems that exhibit intelligent behavior with the capability to learn,
+        demonstrate, explain and advice its users.</li>
+      <li>Helping machines find solutions to complex problems like humans do and applying them as
+        algorithms in a computer-friendly manner.
+      </li>
+    </ol>
+  </div>
+  <div class="meaning">
+    <h3>Goals of Artificial Intelligence</h3> <br>
+    <p>Following are the main goals of Artificial Intelligence:</p>
+    <ol style="margin-left: 20px;">
+      <li>Replicate human intelligence</li>
+      <li>Solve Knowledge-intensive tasks</li>
+      <li>An intelligent connection of perception and action</li>
+      <li>Building a machine which can perform tasks that requires human intelligence such as:
+        <ul style="margin-left: 50px;">
+          <li>Proving a theorem</li>
+          <li>Playing chess</li>
+          <li>Plan some surgical operation</li>
+          <li>Driving a car in traffic</li>
+        </ul>
+      </li>
+      <li>Creating some system which can exhibit intelligent behavior, learn new things by itself, demonstrate, explain, and can advise to its user.</li>
+    </ol>
+  </div>
+  
+
+<br>
+<br>
+<br>
+
+  <div class="hen">
+    <a href="history_of_ai.html">
+      <button type="button">Next Page: History of AI  </button>
+    </a>
+  </div>
+
+  <div class="jen">
+  <a href="index.html">
+    <button type="button">Back: Home  </button>
+  </a>
+  </div>
+
+</body>
+</html>

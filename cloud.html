@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title>Web Journal</title>
+    <style>
+      body{
+        min-height: 100vh;
+        background: url(cloud1.png)no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(4px);
+        /* color: white; */
+
+      }
+      .hen{
+      position: absolute;
+      right: 5%;
+      bottom: 10px;
+      padding: 10px;
+      font-size: 15px;
+     
+      
+    }
+
+    .jen{
+      position: absolute;
+      left: 5%;
+      bottom: 10px;
+      padding: 13px;
+      font-size: 15px;
+     
+    }
+      </style>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+     <div class="menu">
+       <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-table"></i>Journals<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="artificial.html" class="sub-item">Artificial Intelligence </a>
+           <a href="IOT.html" class="sub-item">Internet of Things</a>
+           <a href="VR.html" class="sub-item">VR/AR/MR</a>
+           <a href="bigdata.html" class="sub-item">Data Science</a>
+           <a href="nano.html" class="sub-item">NanoTechnology</a>
+           <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+         </div>
+       </div> 
+       
+       <div class="item"><a href="https://aivannah.github.io/CV/"><i class="fas fa-info-circle"></i>About</a></div>
+     </div>
+   </div>
+   <!-- <section class="main">
+     <h1>Sidebar Menu With<br>Sub-Menus</h1>
+   </section> -->
+<!-- ------------------------------------------------------------------------------------------------------- -->
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+<div class="meaning">
+    <h1 style="text-align: center;"><u> Cloud Computing </u></h1> <br>
+    <p>&emsp;&emsp;&emsp; Cloud computing is a means of networking remote servers that are hosted on the Internet. 
+        Rather than storing and processing data on a local server, or a PC’s hard drive, one of the following three 
+        types of cloud infrastructure is used. Cloud computing services can focus on infrastructure, web development
+         or a cloud-based app. These are often regarded as a stack; all are on-demand, pay-as-you-go. Infrastructure
+          as a Service (IaaS) gives you management of the whole deal: servers, web development tools, applications. 
+          Platform as a Service (PaaS) offers a complete web development environment, without the worry of the 
+          hardware that runs it. Finally, Software as a Service (SaaS) allows access to cloud-based apps, usually 
+          through a web browser interface. SaaS is the top of the stack. Cloud computing has been around since 2000.</p> <br>
+
+    <h3 style ="margin-left: 50px;">Advantages of cloud computing </h3> <br>
+    <p>&emsp;&emsp;&emsp; Well, much like with any utility -a business benefits from economy of scale, which means <b>cheap computing power</b> . Because a cloud provider’s hardware and software are shared, there’s <b> no need for the initial costly capital investment </b>. And it goes much further than that. Businesses <b>save on the
+        electricity required 24/7 to power and cool that computing infrastructure </b> . In effect, energy costs are shared.
+        It gets better. Cloud providers have <b>vast resources of computing power at their fingertips </b> . They can allocate these whenever required with just a few mouse clicks. Cloud providers source on a global scale, so they can deliver the precise bandwidth, storage and power business needs when it
+        needs it.
+        The cloud allows you and multiple users to access your data from any location. Smartphone, laptop, desktop, wherever you are, you can access the data you need at any time. With cloud computing a business processes its data more efficiently, increasing productivity.
+        Maintenance is much cheaper, often free, so reliability is rarely a worry. Cloud computing allows CEOs to focus on running their business. </p> <br>
+
+        <div class="meaning">
+            <h1 style="text-align: center;"><u> Quantum computing  </u>  </h1> <br>
+            <p>&emsp;&emsp;&emsp; Quantum computers truly do represent the next generation of computing. Unlike classic computers, they derive their computing power by harnessing the power of quantum physics.
+                Because of the rather nebulous science behind it, a practical, working quantum computer still remains a flight of fancy.
+                Give clients access to a quantum computer over the internet, and you have quantum cloud computing. Currently, the only organization which provides a quantum computer in the cloud is IBM. They allow free access to anyone who wishes to use their 5-qubit machine.</p> <br>
+        
+                <h3 style ="margin-left: 50px;">Advantages of quantum computing </h3> <br>
+    <p>&emsp;&emsp;&emsp; Getting a quantum computer to function usefully is an exciting prospect for scientists. Their gargantuan computing power would allow them to crunch very long numbers. <b> They would be able to make complex calculations that would only overwhelm classic computers </b>.
+        Accessing a cloud-based quantum computer combines the benefits of both technologies exponentially. Quantum computing could <b> help in the discovery of new drugs, by unlocking the complex structure of chemical molecules </b>. Other uses include <b> financial trading, risk management, and supply chain optimization </b>. With its ability to handle more complex numbers, data could be
+        transferred over the internet with much safer encryption.
+        Maintenance is <b> much cheaper, often free, so reliability is rarely a worry </b>. Cloud computing allows CEOs to focus on running their business. </p> <br>
+
+     
+  </div> 
+  
+  <br>
+<br> <br> <br>
+<br>
+
+  <div class="hen">
+    <a href="cloud_autonomic.html">
+      <button type="button">Next Page: Autonomic Computing  </button>
+    </a>
+  </div>
+
+  <div class="jen">
+  <a href="index.html">
+    <button type="button">Back: Home  </button>
+  </a>
+  </div>
+
+</body>
+</html>
+  

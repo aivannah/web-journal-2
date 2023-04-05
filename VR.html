@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title>Web Journal</title>
+    <style>
+      body{
+        min-height: 100vh;
+        background: url(vr.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(4px);
+        color: white;
+      }
+      .hen{
+      position: absolute;
+      right: 5%;
+      bottom: 10px;
+      padding: 10px;
+      font-size: 15px;
+     
+      
+    }
+
+    .jen{
+      position: absolute;
+      left: 5%;
+      bottom: 10px;
+      padding: 13px;
+      font-size: 15px;
+     
+    }
+      </style>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+     <div class="menu">
+       <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-table"></i>Journals<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="artificial.html" class="sub-item">Artificial Intelligence </a>
+           <a href="IOT.html" class="sub-item">Internet of Things</a>
+           <a href="VR.html" class="sub-item">VR/AR/MR</a>
+           <a href="bigdata.html" class="sub-item">Data Science</a>
+           <a href="nano.html" class="sub-item">NanoTechnology</a>
+           <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+           <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+         </div>
+       </div> 
+       
+       <div class="item"><a href="https://aivannah.github.io/CV/"><i class="fas fa-info-circle"></i>About</a></div>
+     </div>
+   </div>
+   <!-- <section class="main">
+     <h1>Sidebar Menu With<br>Sub-Menus</h1>
+   </section> -->
+<!-- ------------------------------------------------------------------------------------------------------- -->
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+    
+
+<div class="meaning">
+  <h1 style="text-align: center;"><u>Augmented Reality</u> </h1> <br>
+  <h3 style="margin-left: 50px;"><b>Overview on Augmented Reality</b> </h3> <br>
+  <p>&emsp;&emsp;&emsp; Augmented Reality is a technology that allows digitally generated 3D Objects to be overlaid in real-world scenarios.​ The virtual objects shows up on the screen in the real environment together with the AR device’s camera input. This way the users
+    can interact with both the physical world and the virtual object enriching the experience with data.</p> <br>
+
+    <h3 style="margin-left: 50px;"><b>Examples:</b> </h3> <br>
+    <ul style="margin-left: 60px;">
+      <li>When buying furniture, shoppers point the camera to the appropriate room and the product will appear in the foreground</li>
+      <li>Google Lens
+      </li>
+      <li>Google Maps
+      </li>
+    </ul>
+</div> 
+  
+<br><br>
+
+<div class="meaning">
+  <h3 style="margin-left: 50px;"><b>Virtual Reality</b> </h3> <br>
+  <p>&emsp;&emsp;&emsp; The computer-generated simulation of a three-dimensional image or environment that can 
+    be interacted with in a seemingly real or physical way by a person using special electronic equipment, such 
+    as a helmet with a screen inside or gloves fitted with sensors.</p>
+</div> 
+  
+<br><br>
+
+<div class="meaning">
+  <h3 style="margin-left: 50px;"><b>Mixed Reality</b> </h3> <br>
+  <ul style="margin-left: 60px;">
+    <li>Mixed Reality is made of different advanced technologies, primarily Augmented
+      Reality and Virtual Reality.</li>
+    <li>an expanded version of augmented reality where users can interact with virtual
+      objects
+    </li>
+  </ul>
+</div> 
+  
+<br>
+<br>
+<br>
+
+  <div class="hen">
+    <a href="vr_architecture_application.html">
+      <button type="button">Next Page: Architecture and Applications  </button>
+    </a>
+  </div>
+
+  <div class="jen">
+  <a href="index.html">
+    <button type="button">Back: Home  </button>
+  </a>
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title>Web Journal</title>
+    <style>
+      body{
+        min-height: 100vh;
+        background: url(data2.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(2px);
+        color: white;
+      }
+      .hen{
+      position: absolute;
+      right: 5%;
+      bottom: 10px;
+      padding: 10px;
+      font-size: 15px;
+     
+      
+    }
+
+    .jen{
+      position: absolute;
+      left: 5%;
+      bottom: 10px;
+      padding: 13px;
+      font-size: 15px;
+     
+    }
+      </style>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+     <div class="menu">
+       <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-table"></i>Journals<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="artificial.html" class="sub-item">Artificial Intelligence </a>
+           <a href="IOT.html" class="sub-item">Internet of Things</a>
+           <a href="VR.html" class="sub-item">VR/AR/MR</a>
+           <a href="bigdata.html" class="sub-item">Data Science</a>
+           <a href="nano.html" class="sub-item">NanoTechnology</a>
+           <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+         </div>
+       </div> 
+       
+       <div class="item"><a href="https://aivannah.github.io/CV/"><i class="fas fa-info-circle"></i>About</a></div>
+     </div>
+   </div>
+   <!-- <section class="main">
+     <h1>Sidebar Menu With<br>Sub-Menus</h1>
+   </section> -->
+
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+
+  <!-- -------------------------------------------------------------------------------------------------------  -->
+
+  <div class="meaning">
+    <h3 style="margin-left: 50px;"><b>What is Big Data</b> </h3> <br>
+    <p>&emsp;&emsp;&emsp; Big Data’ is similar to ‘ small data’, but bigger in size. But having data bigger requires different approaches:
+        </p>
+    <ul style="margin-left: 10%;">
+        <li>Techniques</li>
+        <li>Tools</li>
+        <li>Architecture</li>
+    </ul>
+    <p>&emsp;&emsp;&emsp; Data generates value from the storage processing of very large quantities of digital information that cannot be analyzed with tradition computing
+        techniques.
+    </p>
+  </div> 
+
+  <div class="meaning">
+    <h3>Three Characteristics of Big Data</h3> <br>
+    <ol style="margin-left: 5%;">
+      <li><b>Volume (Data Quantity)</b>
+        <ul style="margin-left: 3%;">
+            <li>A typical PC might have had 10 gigabytes of storage in 2000.</li>
+            <li>Today, Facebook ingests 500 terabytes of new data everyday</li>
+            <li>Boeing 737 will generate 240 terabytes of flight data during a single flight across
+                the US</li>
+            <li>The smart phones , the data they create and consume; sensors embedded onto everyday objects 
+                will soon result in billions of new, constantly-updated data feeds containing environmental, 
+                location and other information, including video</li>
+        </ul>
+        </li> <br>
+
+        <li><b>Velocity (Data Speed)</b>
+            <ul style="margin-left: 3%;">
+                <li>Clickstreams and ad impressions capture user behavior at millions of events
+                    per second.</li>
+                <li>Machine to machine processes exchange data between billions of devices</li>
+                <li>Infrastructure and sensors generate massive log data in real time</li>
+                <li>Online gaming systems support millions of concurrent users, each producing
+                    multiple inputs per second.
+                    </li>
+            </ul>
+            </li> <br>
+
+            <li><b>Variety
+                (Data types)</b>
+                <ul style="margin-left: 3%;">
+                    <li>Big Data isn’t just numbers, dates and strings. Big data is also geospastial data, 3d data, audio and video, and unstructured text. Including log files and
+                        social media</li>
+                    <li>Traditional database systems were designed to address smaller volumes of structured data, fewer updates or a predictable, consistent data structure.</li>
+                    <li>Big Data analysis includes different types of data
+                    </li>
+                </ul>
+                </li> <br>
+         
+    </ol>
+  </div>
+
+  <br>
+  <br> <br> <br>
+  <br>
+  
+    <div class="hen">
+      <a href="data_cluster_trypes.html">
+        <button type="button">Next Page: Cluster Computing and it's Types </button>
+      </a> 
+    </div>
+  
+    <div class="jen">
+    <a href="data_used_for.html">
+      <button type="button">Back: The used and techniques <br> in Data Science  </button>
+    </a>
+    </div>
+  
+  </body>
+  </html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Web Journal</title>
+
+    <style>
+        body{
+          min-height: 100vh;
+          background: url(ai.jpg)no-repeat;
+          background-size: cover;
+          background-position: center;
+          backdrop-filter: blur(4px);
+        }
+        
+        /* button{
+          position: absolute;
+          right: 5%;
+          bottom: 20px;
+          padding: 15px;
+          font-size: 15px;
+          
+        } */
+        .hen{
+      position: absolute;
+      right: 5%;
+      bottom: 10px;
+      padding: 10px;
+      font-size: 15px;
+     
+      
+    }
+
+
+    .jen{
+      position: absolute;
+      left: 5%;
+      bottom: 10px;
+      padding: 13px;
+      font-size: 15px;
+     
+    }
+      </style>
+
+
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <div class="close-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+          <div class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+            <div class="item">
+              <a class="sub-btn"><i class="fas fa-table"></i>Journals<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                  <a href="artificial.html" class="sub-item">Artificial Intelligence </a>
+                  <a href="IOT.html" class="sub-item">Internet of Things</a>
+                  <a href="VR.html" class="sub-item">VR/AR/MR</a>
+                  <a href="bigdata.html" class="sub-item">Data Science</a>
+                  <a href="nano.html" class="sub-item">NanoTechnology</a>
+                  <a href="cloud.html" class="sub-item">Cloud and Quantum Computing</a>
+                </div>
+            </div>  
+          <div class="item"><a href="https://aivannah.github.io/CV/"><i class="fas fa-info-circle"></i>About</a></div>
+        </div>
+    </div>
+<!-- ---------------------------------------------------------------------------------------------------------- -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        //jquery for toggle sub menus
+        $('.sub-btn').click(function(){
+          $(this).next('.sub-menu').slideToggle();
+          $(this).find('.dropdown').toggleClass('rotate');
+        });
+   
+        //jquery for expand and collapse the sidebar
+        $('.menu-btn').click(function(){
+          $('.side-bar').addClass('active');
+          $('.menu-btn').css("visibility", "hidden");
+        });
+   
+        $('.close-btn').click(function(){
+          $('.side-bar').removeClass('active');
+          $('.menu-btn').css("visibility", "visible");
+        });
+      });
+      </script>
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+  <h1 style= "margin-left: 5%;">Advantages of Artificial Intelligence </h1> 
+  <div class="meaning">
+    <ul style="margin-right: 4%; margin-left: 5%;" >
+      <li><b> High Accuracy with fewer errors:</b> AI machines or systems are prone to fewer errors and high
+      accuracy as it takes decisions as per pre-experience or information.</li>
+      <li><b> High-Speed:</b> AI systems can be of very high-speed and fast-decision making, because of that
+        AI systems can beat a chess champion in the Chess game.</li>
+      <li><b> High reliability:</b> AI machines are highly reliable and can perform the same action multiple times
+        with high accuracy.</li>
+      <li><b> Useful for risky areas:</b> AI machines can be helpful in situations such as defusing a bomb,
+        exploring the ocean floor, where to employ a human can be risky.</li>  
+      <li><b> Digital Assistant:</b> AI can be very useful to provide digital assistant to users such as AI
+        technology is currently used by various E-commerce websites to show the products as per customer
+        requirements.</li>
+      <li><b> Useful as a public utility:</b> AI can be very useful for public utilities such as a self-driving car
+        which can make our journey safer and hassle-free, facial recognition for security purposes, Natural language processing (for search engines, for spelling checker, for assistant like Siri, for translation like google
+        translate), etc.</li>  
+    </ul>
+  </div>
+
+<br>
+<br>
+
+  <h1 style= "margin-left: 5%;">Disadvantages of Artificial Intelligence </h1> 
+  <div class="meaning">
+    <ul style="margin-right: 4%; margin-left: 5%;">
+      <li><b> High Cost:</b> The hardware and software requirement of AI is very costly as it requires lots of
+        maintenance to meet current world requirements.</li>
+      <li><b> Can't think out of the box:</b> Even we are making smarter machines with AI, but still they cannot
+        work out of the box, as the robot will only do that work for which they are trained, or programmed.</li>
+      <li><b> No feelings and emotions:</b> AI machines can be an outstanding performer, but still it does not
+        have the feeling so it cannot make any kind of emotional attachment with humans, and may sometime be
+        harmful for users if the proper care is not taken.</li>
+      <li><b> Increase dependence on machines:</b> With the increment of technology, people are getting more
+        dependent on devices and hence they are losing their mental capabilities.</li>  
+      <li><b> No Original Creativity:</b> As humans are so creative and can imagine some new ideas but still AI
+        machines cannot beat this power of human intelligence and cannot be creative and imaginative.</li>
+    </ul>
+  </div>
+
+<br>
+<br>
+<br>
+
+<div class="hen">
+    <a href="levels_ai.html">
+      <button type="button">Next Page: Levels of AI  </button>
+    </a>
+</div>
+<div class="jen">
+  <a href="history_of_ai.html">
+    <button type="button">Back: History of AI  </button>
+  </a>
+</div>
+
+<br>
+<br>
+
+
+</body>
+</html>
